@@ -64,21 +64,17 @@ $route['dashboard_stats'] = 'dashboard/dashboard_stats';
 $route['dashboard/projects'] = 'Userdashboard/projects/projects';
 $route['dashboard/files'] = 'Userdashboard/files/files';
 $route['dashboard/billing'] = 'Userdashboard/billing/billing';
-$route['dashboard/messages'] = 'Userdashboard/messages/inbox';
-$route['messages/read'] = 'userdashboard/messages/read';
+$route['dashboard/messages'] = 'Userdashboard/inbox';
 $route['dashboard/profile'] = 'Userdashboard/profile/profile';
-$route['dashboard/upload'] = 'Userdashboard/aboutus';
+$route['dashboard/upload'] = 'Userdashboard/upload';
 $route['files/file_upload'] = 'Userdashboard/files/file_upload';
+$route['dashboard/aboutus'] = 'Userdashboard/aboutus';
 //Common views for header and footer
 $route['footer_view'] = 'common/footer_view';
 $route['header_view'] = 'common/header_view';
-//About Red projects
-$route['aboutus_view'] = 'about/aboutus_view';
 //404 error!
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 /*upload routes */
 $route['upload-image'] = 'ImageUploadController';
 $route['store-image'] = 'ImageUploadController/store';
-//Route to pagination page
-$route['dashboard/messages'] = 'userdashboard/messages';
