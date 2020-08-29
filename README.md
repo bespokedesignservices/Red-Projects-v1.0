@@ -29,16 +29,16 @@ Using your filemanager or filezilla or something similar to upload all the files
 # CHMOD - Please change the following files permissions for the installer
 
 * <b>config.php</b>
-* Go to: application-> config -> congig.php - <b>777</b></br>
+* Go to: application-> config -> config.php - <b>777</b></br>
 <b>database.php</b>
 * Go to: application-> config-> database.php - <b>777</b>
 
 # Start the installer
 
 * Go to: https://www.yourwebsite.com/install/
-* Follow the online instructions, you will need to setup your database using <i>phpmyadmin</i> or similar</br>
-<b>Details you will need to setup Red Projects</b>
-</br>
+* Follow the online instructions, you will need to setup your database using <i>phpmyadmin</i> or similar
+# Details you will need to setup Red Projects
+
 * Hostname
 * Database Name
 * Database username
