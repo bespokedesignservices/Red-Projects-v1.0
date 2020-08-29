@@ -8,6 +8,7 @@ $this->load->model('Files_model');
 $this->load->model('Index_model');
 $this->load->model('Dashboard_model');
 $this->load->model('Billing_model');
+$this->load->model('Message_dashboard_model');
  $this->load->helper('url', 'form');
 $this->load->model('Message_dashboard_model');
 }
@@ -46,7 +47,7 @@ $this->load->model('Message_dashboard_model');
 
 
 //***************************************************//
-// Load the files page, header and footer!           //
+// Load the files list page, header and footer!      //
 //***************************************************//
 	public function files(){
 		// //load model
@@ -134,11 +135,11 @@ $this->load->database();//Load the database
     
 	}
 //***************************************************//
-// Load the about us page, header and footer!        //
+// Load the file upload page, header and footer!     //
 //***************************************************//
-public function aboutus(){
+public function upload(){
 		// //load model
-        $this->load->model('Index_model');
+        $this->load->model('Files_model');
 		// get data
 		//$data['content'] = $this->Main_model->getAboutusData();
 		// load base_url
@@ -147,9 +148,12 @@ public function aboutus(){
 		// load view
 		$this->load->view('files/file_upload');
 		}
+//***************************************************//
+// Load the inbox page, header and footer!           //
+//***************************************************//
 public function inbox(){
 		// //load model
-        $this->load->model('message_model');
+        $this->load->model('Message_dashboard_model');
 		// get data
 		//$data['content'] = $this->Main_model->getAboutusData();
 		// load base_url
@@ -158,6 +162,23 @@ public function inbox(){
 		// load view
 		$this->load->view('messages/inbox');
 		}
+//***************************************************//
+// Load the about page, header and footer!           //
+//***************************************************//
+public function aboutus(){
+		// //load model
+        $this->load->model('Index_model');
+
+		// get data
+		$data['content'] = $this->Index_model->getAboutusData();
+
+		// load base_url
+		$this->load->helper('url');
+
+		// load view
+		$this->load->view('about/aboutus_view',$data);
+	}
+
 }
  //***************************************************//
 // end of code do not delete the class ending below! //
