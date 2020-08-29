@@ -30,6 +30,7 @@ $lang['menu_files'] = 'My Files';
 $lang['menu_upload'] = 'Upload a File';
 $lang['menu_messages'] = 'Private Message';
 $lang['menu_logout'] = 'Log Out';
+$lang['menu_aboutus'] = 'About RedProjects v1.0';
 //Profile titles
 $lang['profile_details'] = 'My Details';
 $lang['profile_quick_view'] = 'Quick View';
