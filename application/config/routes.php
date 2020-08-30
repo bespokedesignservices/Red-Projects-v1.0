@@ -78,3 +78,7 @@ $route['translate_uri_dashes'] = FALSE;
 /*upload routes */
 $route['upload-image'] = 'ImageUploadController';
 $route['store-image'] = 'ImageUploadController/store';
+//Admin routes
+$route['dashboard/admin'] = 'Admin/admin/dashboard/dashboard';
+$route['admin_footer_view'] = 'admin/common/footer_view';
+$route['admin_header_view'] = 'admin/common/header_view';
