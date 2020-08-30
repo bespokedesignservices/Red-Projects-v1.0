@@ -1,4 +1,4 @@
-<?php $this->load->view('common/header_view');?>
+<?php $this->load->view('admin/common/header_view');?>
 
      
      <div class="content">
@@ -160,4 +160,4 @@ foreach ($data as $row);{ ?>
             </div>
           </div></div>
 </div>
-<?php $this->load->view('common/footer_view');?>
+<?php $this->load->view('admin/common/footer_view');?>
