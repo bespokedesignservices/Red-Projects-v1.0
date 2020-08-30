@@ -104,4 +104,7 @@ $lang['text_move'] = 'Move To';
 $lang['text_recieved'] = 'Recieved';
 $lang['text_action'] = 'Action';
 $lang['text_message_number'] = '#';
+//Admin language
+$lang['admin_app_welcome'] = 'Welcome to Admin:';
+$lang['admin_app_title'] = 'Red Projects v1.0 - Administration';
 ?>
