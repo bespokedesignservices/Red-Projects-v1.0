@@ -1,2 +1,0 @@
-- name: Deploy your app to GitHub Pages
-  uses: awb-pw/deploy-to-github-pages-action@1.1.1
