@@ -1,4 +1,3 @@
-<?php $this->load->view('common/header_view');?>
 <style type="text/css">
 span{
     font-size:15px;
@@ -203,6 +202,3 @@ span{
    </div>
 </div>
  </div>
-<?php $this->load->view('common/footer_view'); ?>
-
-         

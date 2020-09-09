@@ -1,24 +1,3 @@
-<?php 
-// Load header view
-$this->load->view('common/header_view'); 
-
-// Print content?>
-<!-- style for uploads area -->
-<style type="text/css">
-
-</style>
- 
-<script>
-// Add the following code if you want the name of the file appear on select
-$(".custom-file-input").on("change", function() {
-  var fileName = $(this).val().split("\\").pop();
-  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
-});
-</script>
-
-<!-- end of styles for uploads -->
-
-  
      <div class="content">
         <div class="container-fluid">
         <div id="loader"></div>
@@ -44,7 +23,7 @@ $(".custom-file-input").on("change", function() {
 
 	<div class="row">
 		<div class="col-md-12">
-        <a href="<?php echo site_url() ?>dashboard/upload" class="btn btn-danger"><i class="material-icons">cloud_upload</i>&nbsp;&nbsp;<?= $this->lang->line('files_upload_btn'); ?></a>
+        <a href="<?php echo site_url() ?>admin/dashboard/upload" class="btn btn-danger"><i class="material-icons">cloud_upload</i>&nbsp;&nbsp;<?= $this->lang->line('files_upload_btn'); ?></a>
 			<div class="row">
 				<div class="col-md-12">
 					<div class="card">
@@ -94,7 +73,3 @@ $(".custom-file-input").on("change", function() {
         
    <!-- end new code -->     <!-- dashboard content end -->
      </div></div> </div>
-  
-  <?php
-// Load footer view
-$this->load->view("common/footer_view");?>

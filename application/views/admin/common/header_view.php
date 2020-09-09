@@ -4,6 +4,7 @@ $user_id= $this->session->userdata('id');
  $this->lang->load('english_lang');//Load the language file!
  $app_title = $this->lang->line('app_title');//Call the App title! - This can be changed via the apps Language/english_lang.php file......
  $admin_app_title = $this->lang->line('admin_app_title');//Call the App title! - This can be changed via the apps Language/english_lang.php file......
+
 ?>
 <!doctype html>
 <html>
@@ -115,57 +116,102 @@ function showPage() {
       </div>
       <div class="sidebar-wrapper">
   <ul class="nav">
-          <li class="nav-item active  ">
-            <a class="nav-link" href="<?php echo site_url() ?>">
+          <li class="nav-item active md-accordion accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+            <a class="nav-link" href="<?php echo site_url() ?>admin">
               <i class="material-icons">dashboard</i>
               <p><?= $this->lang->line('menu_dashboard'); ?></p>
             </a>
           </li>
           <!-- your sidebar here -->
+   
          <li class="nav-item">
-            <a class="nav-link" href="<?php echo site_url() ?>dashboard/projects">
+         
+           <a class="nav-link" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
               <i class="material-icons">important_devices</i>
-              <p><?= $this->lang->line('menu_projects'); ?></p>
-            </a>
+              <p><?= $this->lang->line('menu_admin_projects'); ?></p>
+              </a>
           </li>
+       
+         <div class="collapse" id="collapseExample">
+                 
+                  <a class="dropdown-item text-muted" href="<?php echo site_url() ?>admin/dashboard/projects"><i class="material-icons">preview</i>View Project</a>
+          <a class="dropdown-item text-muted" href="<?php echo site_url() ?>admin/dashboard/proejects/edit"><i class="material-icons">edit</i>Update Project</a>
+                  <a class="dropdown-item text-muted" href="<?php echo site_url() ?>admin/dashboard/projects/create"><i class="material-icons">add</i>Create A Project</a>
+                  
+                </div>
+         
          <li class="nav-item">
-            <a class="nav-link" href="<?php echo site_url() ?>dashboard/billing">
+            <a class="nav-link" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
               <i class="material-icons">list</i>
-              <p><?= $this->lang->line('menu_billing'); ?></p>
+              <p><?= $this->lang->line('menu_admin_billing'); ?></p>
             </a>
           </li>
+  <div class="collapse" id="collapseExample2">
+                 
+                  <a class="dropdown-item text-muted" href="<?php echo site_url() ?>admin/dashboard/billing"><i class="material-icons">preview</i>View Invoices</a>
+          <a class="dropdown-item text-muted" href="<?php echo site_url() ?>admin/dashboard/invoices/edit"><i class="material-icons">edit</i>Update Invoice</a>
+                  <a class="dropdown-item text-muted" href="<?php echo site_url() ?>admin/dashboard/invoices/create"><i class="material-icons">add</i>Create an Invoice</a>
+                  
+                </div>
         <li class="nav-item">
-            <a class="nav-link" href="<?php echo site_url() ?>dashboard/files">
+            <a class="nav-link"  data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
               <i class="material-icons">work</i>
-              <p><?= $this->lang->line('menu_files'); ?></p>
+              <p><?= $this->lang->line('menu_admin_files'); ?></p>
         </a>
   
        
           </li>
-      <li class="nav-item">
-            <a class="nav-link" href="<?php echo site_url() ?>dashboard/upload">
-              <i class="material-icons">cloud_upload</i>
-              <p><?= $this->lang->line('menu_upload'); ?></p>
-            </a>
-          </li>
+  <div class="collapse" id="collapseExample3">
+                 
+                  <a class="dropdown-item text-muted" href="<?php echo site_url() ?>admin/dashboard/files"><i class="material-icons">preview</i>View Files</a>
+          <a class="dropdown-item text-muted" href="<?php echo site_url() ?>admin/dashboard/upload"><i class="material-icons">cloud_upload</i>Upload Files</a>
+  </div>
+                  
+    
 <li class="nav-item">
-            <a class="nav-link" href="<?php echo site_url() ?>dashboard/messages">
+            <a class="nav-link" href="<?php echo site_url() ?>admin/dashboard/messages">
               <i class="material-icons">message</i>
               <p><?= $this->lang->line('menu_messages'); ?></p>
             </a>
           </li>
          
+         
+   <!-- Plugins -->
+  <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+              <i class="material-icons">settings_input_composite</i>
+            <p><?= $this->lang->line('menu_plugins'); ?></p>
+            </a>
+          </li>
+  <div class="collapse" id="collapseExample4">
+                 
+                  <a class="dropdown-item text-muted" href="<?php echo site_url() ?>admin/dashboard/plugins"><i class="material-icons">preview</i>View all plugins</a>
+          <a class="dropdown-item text-muted" href="<?php echo site_url() ?>admin/dashboard/plugins/add"><i class="material-icons">cloud_upload</i>Upload Plugin Files</a>
+  </div>
+  <!-- end plugins -->
+    <!--Users -->
+  <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
+              <i class="material-icons">people</i>
+            <p>Users</p>
+            </a>
+          </li>
+  <div class="collapse" id="collapseExample5">
+                 
+                  <a class="dropdown-item text-muted" href="<?php echo site_url() ?>admin/dashboard/users"><i class="material-icons">preview</i>View all Users</a>
+          <a class="dropdown-item text-muted" href="<?php echo site_url() ?>admin/dashboard/usres/add"><i class="material-icons">add</i>Add a user</a>
+  </div>
+  <!-- end users -->
           <li class="nav-item">
+            <a class="nav-link" href="<?php echo site_url() ?>admin/dashboard/aboutus">
+              <i class="material-icons">support</i>
+              <p><?= $this->lang->line('menu_aboutus'); ?></p>
+            </a>
+          </li>
+   <li class="nav-item">
             <a class="nav-link" href="<?php echo site_url() ?>logout">
               <i class="material-icons">lock_open</i>
               <p><?= $this->lang->line('menu_logout'); ?></p>
-            </a>
-          </li>
-   
-          <li class="nav-item">
-            <a class="nav-link" href="<?php echo site_url() ?>dashboard/aboutus">
-              <i class="material-icons">support</i>
-              <p><?= $this->lang->line('menu_aboutus'); ?></p>
             </a>
           </li>
         </ul>
@@ -188,20 +234,20 @@ function showPage() {
           <div class="collapse navbar-collapse justify-content-end">
           <ul class="navbar-nav">
            <li class="nav-item">
-            <a class="nav-link text-danger shadow" href="<?php echo site_url() ?>">
+            <a class="nav-link text-danger shadow" href="<?php echo site_url() ?>admin">
               <i class="material-icons">dashboard</i>
               <p>Dashboard</p>
             </a>
           </li>
           <li class="nav-item">
          
-            <a class="nav-link text-danger" href="<?php echo site_url() ?>dashboard/messages">
+            <a class="nav-link text-danger" href="<?php echo site_url() ?>admin/dashboard/messages">
             <i class="material-icons">email</i>
               <p>messages</p> <span></span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-danger" href="<?php echo site_url() ?>dashboard/profile">
+            <a class="nav-link text-danger" href="<?php echo site_url() ?>admin/dashboard/profile">
               <i class="material-icons">account_circle</i>
               <p>profile</p>
             </a>

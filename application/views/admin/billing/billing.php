@@ -1,12 +1,4 @@
-<?php 
-// Load header view
-$this->load->view('common/header_view'); 
-
-// Print content?>
-
-
-  
-     <div class="content">
+<div class="content">
         <div class="container-fluid">
         <div id="loader"></div>
 
@@ -75,6 +67,3 @@ echo "<span class='text-danger font-weight-bold'>".$this->lang->line('billing_st
           
         <!-- dashboard content end -->
 </div></div>
-  <?php
-// Load footer view
-$this->load->view("common/footer_view");?>

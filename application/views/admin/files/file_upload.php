@@ -1,6 +1,6 @@
 <?php 
 // Load header view
-$this->load->view('common/header_view'); 
+$this->load->view('admin/common/header_view'); 
 
 // Print content?>
 <!-- style for uploads area -->
@@ -84,4 +84,4 @@ $(".custom-file-input").on("change", function() {
   
   <?php
 // Load footer view
-$this->load->view("common/footer_view");?>
+$this->load->view("admin/common/footer_view");?>
