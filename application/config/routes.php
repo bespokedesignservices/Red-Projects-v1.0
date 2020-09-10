@@ -68,7 +68,7 @@ $route['dashboard/messages'] = 'Userdashboard/inbox';
 $route['dashboard/profile'] = 'Userdashboard/profile/profile';
 $route['dashboard/upload'] = 'Userdashboard/upload';
 $route['files/file_upload'] = 'Userdashboard/files/file_upload';
-$route['dashboard/aboutus'] = 'Userdashboard/aboutus';
+$route['dashboard/aboutus'] = 'Userdashboard/aboutus/aboutus';
 //Common views for header and footer
 $route['footer_view'] = 'common/footer_view';
 $route['header_view'] = 'common/header_view';
@@ -79,6 +79,12 @@ $route['translate_uri_dashes'] = FALSE;
 $route['upload-image'] = 'ImageUploadController';
 $route['store-image'] = 'ImageUploadController/store';
 //Admin routes
-$route['dashboard/admin'] = 'Admin/admin/dashboard/dashboard';
+$route['admin'] = 'Admin/admin/dashboard/dashboard';
+$route['admin/dashboard/billing'] = 'Admin_billing/admin_billing/admin/billing/billing';
+$route['admin/dashboard/files'] = 'Admin_files/admin_files/admin/files/files';
+$route['admin/dashboard/upload'] = 'Admin_files/upload/admin/files/file_upload';
+$route['admin/dashboard/profile'] = 'Admin_profile/admin_profile/admin/profile/profile';
+$route['admin/dashboard/aboutus'] = 'Pages/aboutus/aboutus';
+$route['admin/dashboard/projects'] = 'Admin_projects/admin_projects/admin/projects/projects';
 $route['admin_footer_view'] = 'admin/common/footer_view';
 $route['admin_header_view'] = 'admin/common/header_view';
