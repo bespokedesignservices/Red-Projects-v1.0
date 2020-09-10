@@ -20,9 +20,10 @@ public function admin_profile(){
 //Fetch data
 $this->load->database();
 	$result['data']=$this->Index_model->display_records();
+	$this->load->view('admin/common/header_view');
 	$this->load->view('admin/profile/profile',$result);
-// load view
-		//$this->load->view('profile');
+	$this->load->view('admin/common/footer_view');
+	
 
 	}
 //***************************************************//
