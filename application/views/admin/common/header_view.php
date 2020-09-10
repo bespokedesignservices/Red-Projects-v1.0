@@ -168,12 +168,7 @@ function showPage() {
   </div>
                   
     
-<li class="nav-item">
-            <a class="nav-link" href="<?php echo site_url() ?>admin/dashboard/messages">
-              <i class="material-icons">message</i>
-              <p><?= $this->lang->line('menu_messages'); ?></p>
-            </a>
-          </li>
+
          
          
    <!-- Plugins -->
