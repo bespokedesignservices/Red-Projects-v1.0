@@ -148,12 +148,7 @@ function showPage() {
               <p><?= $this->lang->line('menu_upload'); ?></p>
             </a>
           </li>
-<li class="nav-item">
-            <a class="nav-link" href="<?php echo site_url() ?>dashboard/messages">
-              <i class="material-icons">message</i>
-              <p><?= $this->lang->line('menu_messages'); ?></p>
-            </a>
-          </li>
+
          
           <li class="nav-item">
             <a class="nav-link" href="<?php echo site_url() ?>logout">
@@ -193,13 +188,7 @@ function showPage() {
               <p>Dashboard</p>
             </a>
           </li>
-          <li class="nav-item">
          
-            <a class="nav-link text-danger" href="<?php echo site_url() ?>dashboard/messages">
-            <i class="material-icons">email</i>
-              <p>messages</p> <span></span>
-            </a>
-          </li>
           <li class="nav-item">
             <a class="nav-link text-danger" href="<?php echo site_url() ?>dashboard/profile">
               <i class="material-icons">account_circle</i>
