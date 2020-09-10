@@ -234,13 +234,7 @@ function showPage() {
               <p>Dashboard</p>
             </a>
           </li>
-          <li class="nav-item">
-         
-            <a class="nav-link text-danger" href="<?php echo site_url() ?>admin/dashboard/messages">
-            <i class="material-icons">email</i>
-              <p>messages</p> <span></span>
-            </a>
-          </li>
+        
           <li class="nav-item">
             <a class="nav-link text-danger" href="<?php echo site_url() ?>admin/dashboard/profile">
               <i class="material-icons">account_circle</i>
