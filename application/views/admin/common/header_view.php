@@ -196,13 +196,7 @@ function showPage() {
                   <a class="dropdown-item text-muted" href="<?php echo site_url() ?>admin/dashboard/users"><i class="material-icons">preview</i>View all Users</a>
           <a class="dropdown-item text-muted" href="<?php echo site_url() ?>admin/dashboard/usres/add"><i class="material-icons">add</i>Add a user</a>
   </div>
-  <!-- end users -->
-          <li class="nav-item">
-            <a class="nav-link" href="<?php echo site_url() ?>admin/dashboard/aboutus">
-              <i class="material-icons">support</i>
-              <p><?= $this->lang->line('menu_aboutus'); ?></p>
-            </a>
-          </li>
+ 
    <li class="nav-item">
             <a class="nav-link" href="<?php echo site_url() ?>logout">
               <i class="material-icons">lock_open</i>
