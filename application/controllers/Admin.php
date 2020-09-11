@@ -14,7 +14,7 @@ $this->load->model('admin/Billing_model','billing');
 // Load the billing  page, header and footer!        //
 //***************************************************//
 		// //load model
-        $this->load->model('admin/Dashboard_model'.'dashboard');
+        $this->load->model('admin/Dashboard_model','dashboard');
 		// load base_url
 		$this->load->helper('url');
 		// load view
