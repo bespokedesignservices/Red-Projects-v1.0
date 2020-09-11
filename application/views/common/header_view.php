@@ -157,12 +157,7 @@ function showPage() {
             </a>
           </li>
    
-          <li class="nav-item">
-            <a class="nav-link" href="<?php echo site_url() ?>dashboard/aboutus">
-              <i class="material-icons">support</i>
-              <p><?= $this->lang->line('menu_aboutus'); ?></p>
-            </a>
-          </li>
+         
         </ul>
       </div>
     </div>
