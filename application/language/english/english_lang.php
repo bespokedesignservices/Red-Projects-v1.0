@@ -132,4 +132,12 @@ $lang['text_sent'] = 'Sent';
 //Admin language
 $lang['admin_app_welcome'] = 'Welcome to Admin:';
 $lang['admin_app_title'] = 'Red Projects v1.0 - Administration';
+$lang['user_name'] = 'Username';
+$lang['user_email'] = 'Email Address';
+$lang['user_date_created'] = 'User Created';
+$lang['user_active'] = 'Account Status';
+$lang['user_is_active'] = 'Active';
+$lang['user_is_not_active'] = 'Deactivated';
+$lang['user_actions'] = 'Actions';
+$lang['menu_users'] = 'All Users';
 ?>
