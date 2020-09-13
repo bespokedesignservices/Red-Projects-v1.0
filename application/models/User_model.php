@@ -27,7 +27,10 @@ class User_model extends CI_Model
 			$userinfo = $query->result_array();
 			return $userinfo;
 		}
-
+		
 	}
+    public function list_edit($name, $email, $password){
+		$query = $this->db->query("UPDATE users (username, email, password) VALUES ('$name', '$email', md5('$password'))");
+}
 }
 ?>

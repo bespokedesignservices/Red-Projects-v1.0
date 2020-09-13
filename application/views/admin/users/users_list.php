@@ -40,7 +40,7 @@ else
 {
 echo "<td class='text-warning font-weight-bold'>".$this->lang->line('user_not_active')."</td>";
  }?> 
-     <td><a href="#"><i class="material-icons text-danger">delete</i></a><a href="#"><i class="material-icons text-success">visibility</i></a></td>
+     <td><a href="<?php echo base_url('admin/dashboard/users/list/edit'. $row->id);?>"><i class="material-icons text-danger">delete</i></a><a href="#"><i class="material-icons text-success">visibility</i></a></td>
    <td></td>
     </tr>
   <?php } ;?>

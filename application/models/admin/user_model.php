@@ -27,7 +27,14 @@ class User_model extends CI_Model
 			$userinfo = $query->result_array();
 			return $userinfo;
 		}
+    }
+public function list_all(){
+      $query = $this->db->get("users");
+$id = $this->session->userdata('session_id');
+$this->db->where('id', " where id != $id");
+// get theresult row
+	return $query->result();
+}
 		
-	}
 }
 ?>

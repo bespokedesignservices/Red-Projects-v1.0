@@ -100,7 +100,7 @@ function showPage() {
    
 </head>
 
-<body class="light-edition" onload="myFunction()" style="margin:0;">
+<body class="light-edition" onLoad="myFunction()" style="margin:0;">
 
 <div class="wrapper ">
     <div class="sidebar" data-color="danger" data-background-color="light" data-image="<?php echo base_url(); ?>resources/assets/img/sidebar-1.jpg">
@@ -170,7 +170,6 @@ function showPage() {
     
 
          
-         
    <!-- Plugins -->
   <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
@@ -193,10 +192,11 @@ function showPage() {
           </li>
   <div class="collapse" id="collapseExample5">
                  
-                  <a class="dropdown-item text-muted" href="<?php echo site_url() ?>admin/dashboard/users"><i class="material-icons">preview</i>View all Users</a>
+                  <a class="dropdown-item text-muted" href="<?php echo site_url() ?>admin/dashboard/users/list"><i class="material-icons">preview</i>View all Users</a>
           <a class="dropdown-item text-muted" href="<?php echo site_url() ?>admin/dashboard/usres/add"><i class="material-icons">add</i>Add a user</a>
   </div>
- 
+  <!-- end users -->
+       
    <li class="nav-item">
             <a class="nav-link" href="<?php echo site_url() ?>logout">
               <i class="material-icons">lock_open</i>
@@ -228,7 +228,7 @@ function showPage() {
               <p>Dashboard</p>
             </a>
           </li>
-        
+          
           <li class="nav-item">
             <a class="nav-link text-danger" href="<?php echo site_url() ?>admin/dashboard/profile">
               <i class="material-icons">account_circle</i>

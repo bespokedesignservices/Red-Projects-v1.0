@@ -3,12 +3,11 @@ $user_id= $this->session->userdata('id');
  //set variables
  $this->lang->load('english_lang');//Load the language file!
  $app_title = $this->lang->line('app_title');//Call the App title! - This can be changed via the apps Language/english_lang.php file......
- $admin_app_title = $this->lang->line('admin_app_title');//Call the App title! - This can be changed via the apps Language/english_lang.php file......
 ?>
 <!doctype html>
 <html>
     <head>
-        <title><?= $admin_app_title ;//This prints the App Title!?></title>
+        <title><?= $app_title ;//This prints the App Title!?></title>
 
    
         
@@ -156,8 +155,6 @@ function showPage() {
               <p><?= $this->lang->line('menu_logout'); ?></p>
             </a>
           </li>
-   
-         
         </ul>
       </div>
     </div>
@@ -167,7 +164,7 @@ function showPage() {
         <div class="container-fluid">
           <div class="navbar-wrapper">
   
-            <a class="navbar-brand text-danger" href="javascript:void(0)"><?= $this->lang->line('admin_app_welcome'); ?>&nbsp;<?= $this->session->userdata('firstname');?></a>
+            <a class="navbar-brand text-danger" href="javascript:void(0)"><?= $this->lang->line('app_welcome'); ?>&nbsp;<?= $this->session->userdata('firstname');?></a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -183,7 +180,7 @@ function showPage() {
               <p>Dashboard</p>
             </a>
           </li>
-         
+          
           <li class="nav-item">
             <a class="nav-link text-danger" href="<?php echo site_url() ?>dashboard/profile">
               <i class="material-icons">account_circle</i>

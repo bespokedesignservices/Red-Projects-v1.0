@@ -1,6 +1,5 @@
 <?php
  $this->lang->load('english_lang');//Load the language file!
-$registerinfo = $this->session->flashdata('register_info');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,11 +32,11 @@ $attributes = array('class' => 'form-signin');
 echo form_open('register', $attributes); ?>
   
     <?php 
-        echo '<div class="alert alert-success">'.$registerinfo.'</div>';
-		echo validation_errors('<div class="alert alert-danger">', '</div>'); ?>
+        echo $this->session->flashdata('register_info');
+        echo validation_errors('<div class="alert alert-danger">', '</div>'); ?>
     <div class="input-group">
-	 
-	
+	  <span class="input-group-addon" id="basic-addon1">@</span>
+	  <!-- <input type="text" name="username" id="username" class="form-control" placeholder="Username" required> -->
     <?php 
       $data = array(
                 'name'          => 'username',
@@ -55,7 +54,6 @@ echo form_open('register', $attributes); ?>
     $attributes = array(
                 'class' => 'sr-only'
         );
-
     echo form_label('Email address', 'inputEmail', $attributes);
 
       $data = array(

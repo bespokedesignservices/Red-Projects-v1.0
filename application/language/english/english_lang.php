@@ -140,4 +140,13 @@ $lang['user_is_active'] = 'Active';
 $lang['user_is_not_active'] = 'Deactivated';
 $lang['user_actions'] = 'Actions';
 $lang['menu_users'] = 'All Users';
+$lang['plugin_title'] = 'Plugins Manager';
+$lang['plugin_name'] = 'Name';
+$lang['plugin_status'] = 'Status';
+$lang['plugin_support'] = 'Support';
+$lang['plugin_version'] = 'Version';
+$lang['plugin_description'] = 'Description';
+$lang['plugin_author'] = 'Author';
+$lang['plugin_data'] = 'Data';
+$lang['plugin_actions'] = 'Actions';
 ?>

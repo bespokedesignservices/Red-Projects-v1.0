@@ -6,14 +6,14 @@ class User extends CI_Controller
 {
 	
 	public function index(){
-		echo "index";
+		
 	}
 
 	public function login(){
 		if($this->session->login == 'true'){
 			redirect('/');
 		}
-		//echo "login";
+		
 		$this->load->view('user/header');
 		$this->load->view('user/login');
 		$this->load->view('user/footer');

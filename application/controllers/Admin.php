@@ -27,8 +27,8 @@ public function admin($offset = 0){
 //***************************************************//
 // Check if the user is logged in to the application!//
 //***************************************************//		
-		if($this->session->login != 'true'){//(Is the user logged in?)
-			redirect('login');//(If not redirect to login page)
+		if($this->session->id != '1'){//(Is the user logged in as standard user or admin?)
+			redirect('login');//(If not redirect to standard login page or if already logged in go to non admin dashboard)
 		}else{//(If is logged in load the information for the user dashboard!)
 		//(load model)
         $this->load->model('Index_model');//(Load the main model that controls the pages!)

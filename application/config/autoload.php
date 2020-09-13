@@ -60,6 +60,7 @@ $autoload['packages'] = array();
 */
 $autoload['libraries'] = array('database', 'session');
 
+
 /*
 | -------------------------------------------------------------------
 |  Auto-load Drivers
@@ -105,6 +106,7 @@ $autoload['helper'] = array('url', 'form');
 */
 $autoload['config'] = array();
 
+
 /*
 | -------------------------------------------------------------------
 |  Auto-load Language files
@@ -133,3 +135,4 @@ $autoload['language'] = array();
 |	$autoload['model'] = array('first_model' => 'first');
 */
 $autoload['model'] = array();
+

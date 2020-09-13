@@ -46,6 +46,23 @@ $this->load->database();//Load the database
     $this->load->view('admin/common/footer_view');
 	
         }	
-
+public function admin_users_edit($offset = 0){
+//***************************************************//
+// Load the user list page, header and footer!        //
+//***************************************************//
+	// //load model
+        $this->load->model('admin/User_model','users');
+		// load base_url
+		$this->load->helper('url');
+		// load view
+		$this->load->library('session');
+		//Fetch data
+$this->load->database();//Load the database
+	$result['data']=$this->users->list_edit();//call the records model
+    $this->load->view('admin/common/header_view');
+	$this->load->view('admin/users/users_list_edit',$result);//display result in the stats file
+    $this->load->view('admin/common/footer_view');
+	
+        }	
     }
 ?>
